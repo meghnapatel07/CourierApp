@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Profile">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showViewUpdateCustProfile" text="View/Update Profile" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Courier">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showBookACourier" text="Book A Courier" />
+                  <MenuItem mnemonicParsing="false" onAction="#showViewCourierByTrackingNo" text="Vew Courier by TrackingNo" />
+                  <MenuItem mnemonicParsing="false" text="View All Courier" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Logout">
+            <items>
+              <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#logout" text="Logout" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Label fx:id="welcome_msg" alignment="CENTER" prefWidth="100.0" BorderPane.alignment="TOP_RIGHT" />
+   </left>
+</BorderPane>
